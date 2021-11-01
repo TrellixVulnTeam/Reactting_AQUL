@@ -1,0 +1,124 @@
+
+
+$storm:#292025;
+$rust:#B56940;
+$sycamore:#8C8C44;
+$fedora:#847484;
+
+html{
+    scroll-behavior: smooth;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 30px;
+
+}
+
+.section{
+    margin-bottom: 8rem;
+    height: 120vh;
+}
+
+.main-background{
+    background-size: cover;
+    background-image: linear-gradient(
+        to right top,
+        rgba($storm,.8),
+        rgba($fedora,.8)),
+        url(../img/zoltan-tasi.jpg);
+
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading-primary{
+    color:whitesmoke;
+    text-transform: uppercase;
+    animation-name: moveinleft;
+    animation-duration: 3s;
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 35px;
+}
+
+@keyframes moveinleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px)
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+footer{
+    padding: 1.5rem;
+    background-color: whitesmoke;
+}
+
+.contact-text{
+    text-align: center;
+    color: $sycamore;
+}
+
+.about-jumbo{
+    background-color: $fedora;
+}
+
+.about-text{
+    height: 150vh;
+    text-align: center;
+    color: #292025
+}
+
+.feature-box{
+    margin-top: 3rem;
+    transition: transform .3s;
+}
+.feature-box:hover{
+    transform: translateY(-1.5rem);
+}
+
+.exp-jumbo{
+    background-color: #B56940;
+    height: 75vh;
+}
+.exp-header{
+    text-align: center;
+    color: rgb(63, 39, 10);
+}
+.ecard{
+    perspective: 150rem;
+    position: relative;
+    height: 30rem;
+
+}
+.ecard__side{
+    text-align: center;
+    color: cadetblue;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.15);
+    transition: all .8s ease;
+
+}
